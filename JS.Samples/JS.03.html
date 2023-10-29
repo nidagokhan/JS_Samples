@@ -5,7 +5,9 @@
     <title></title>
 </head>
 <body>
-    <p id="p1"></p>   
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
 </body>
 </html>
 
@@ -13,9 +15,16 @@
     var x = 5;
     var y = -6;
     var z = x + y;
+    var dizi = ["nida", "istanbul", "1991"];
+    var books = {
+        name: "Kürk Mantolu Madonna",
+        writer: "Sabahattin Ali"
+    };
     /* alert(typeof z);*/
     if (z > 0)
         document.getElementById("p1").innerHTML = z;
     else
         alert("Sonuç 0'dan küçük");
+    document.getElementById("p2").innerHTML = dizi;
+    alert(books.name + " " + books.writer);
 </script>
